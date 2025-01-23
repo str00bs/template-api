@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "template-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Ada <github@adapdr.me>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.6"
+pydantic = {extras = ["email"], version = "^2.10.5"}
+masonite-orm = "^2.23.2"
+pymysql = "^1.1.1"
+uvicorn = "^0.34.0"
+pytz = "^2024.2"
+python-dotenv = "^1.0.1"
+pydantic-settings = "^2.7.1"
+jinja2 = "^3.1.5"
+cryptography = "^44.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
